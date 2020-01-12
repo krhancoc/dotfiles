@@ -1,0 +1,28 @@
+[user]
+	email = kenneth.hancock@westjet.com
+	name = Kenneth Hancock
+[http]
+	sslVerify = false
+	proxy = http://localhost:3125
+[https]
+	sslVerify = false
+	proxy = http://localhost:3125
+[core]
+	excludesfile = /Users/khancock/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[color]
+    status = auto
+    branch = auto
+    interactive = auto
+    ui = true
+    pager = true
+[color "diff"]
+    meta = black bold
+    frag = magenta bold
+    old = red bold
+    new = green bold

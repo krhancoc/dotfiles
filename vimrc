@@ -3,6 +3,7 @@ syntax on
 set clipboard=unnamed
 set clipboard=unnamedplus
 set term=screen-256color
+set visualbell
 
 set nocompatible
 set hidden

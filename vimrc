@@ -6,20 +6,22 @@ set term=screen-256color
 
 set nocompatible
 set hidden
+set visualbell
 
 " Automatic indentation rules
 set autoindent
+set autoread
 filetype plugin indent on
 set smarttab
-set expandtab
+"set expandtab
 set tabstop=8
 set softtabstop=4
 set shiftround
 set shiftwidth=4
 set backspace=indent,eol,start
 set encoding=utf-8
-set formatoptions=tcqor
-"set formatoptions=tcqoraw
+"set formatoptions=tcqor
+set formatoptions=tcqoraw
 
 " Fuzzing Searching
 set path+=**
@@ -126,3 +128,4 @@ map ci <Plug>(coc-implementation)
 map cr <Plug>(coc-references)
 map rn <Plug>(coc-rename)
 
+source ~/.vim/freebsd.vim

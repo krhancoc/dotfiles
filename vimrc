@@ -50,6 +50,7 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'scrooloose/nerdcommenter'
 call plug#end()
 
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 " Per-terminal settings
 set t_Co=256
 set background=light
@@ -128,5 +129,9 @@ map ct <Plug>(coc-type-definition)
 map ci <Plug>(coc-implementation)
 map cr <Plug>(coc-references)
 map rn <Plug>(coc-rename)
+
+"ctrlp
+let g:ctrlp_map='<c-p>'
+let g:ctrlp_cmd='CtrlP'
 
 source ~/.vim/freebsd.vim

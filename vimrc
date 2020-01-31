@@ -83,11 +83,6 @@ map <C-n> :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-" YouCompleteMe
-let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
-let g:ycm_key_list_select_completion = ['<Down>']
-let g:enable_ycm_at_startup = 0
-
 " ViewDoc
 let g:viewdoc_open='vnew'
 
@@ -123,7 +118,7 @@ map gol :GoLint<cr>
 map got :GoTest<cr>
 map gor :GoRun<cr>
 
-" 
+"CoC
 map cd <Plug>(coc-definition)
 map ct <Plug>(coc-type-definition)
 map ci <Plug>(coc-implementation)

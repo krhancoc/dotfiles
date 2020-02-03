@@ -48,9 +48,11 @@ Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'scrooloose/nerdcommenter'
+Plug 'junegunn/fzf', { 'dir':'~/fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
 " Per-terminal settings
 set t_Co=256
 set background=light
@@ -125,8 +127,6 @@ map ci <Plug>(coc-implementation)
 map cr <Plug>(coc-references)
 map rn <Plug>(coc-rename)
 
-"ctrlp
-let g:ctrlp_map='<c-p>'
-let g:ctrlp_cmd='CtrlP'
+map <C-p> :Files<CR>
 
 source ~/.vim/freebsd.vim

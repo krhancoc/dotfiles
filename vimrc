@@ -55,7 +55,7 @@ Plug 'powerman/vim-plugin-viewdoc'
 call plug#end()
 
 " Per-terminal settings
-"set t_Co=256
+set t_Co=256
 "set background=light
 colorscheme PaperColor
 

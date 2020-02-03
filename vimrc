@@ -51,6 +51,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/fzf', { 'dir':'~/fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'powerman/vim-plugin-viewdoc'
 call plug#end()
 
 " Per-terminal settings
@@ -128,5 +129,6 @@ map cr <Plug>(coc-references)
 map rn <Plug>(coc-rename)
 
 map <C-p> :Files<CR>
+map <C-o> :Ag<CR>
 
 source ~/.vim/freebsd.vim

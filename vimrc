@@ -46,7 +46,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
-Plug 'NLKNguyen/papercolor-theme'
+Plug 'rafi/awesome-vim-colorschemes'
 Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/fzf', { 'dir':'~/fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -55,21 +55,9 @@ Plug 'powerman/vim-plugin-viewdoc'
 call plug#end()
 
 " Per-terminal settings
-set t_Co=256
-set background=light
+"set t_Co=256
+"set background=light
 colorscheme PaperColor
-
-if (&term == "xterm")
-    set mouse=a
-    set t_Co=256
-    " Light Theme
-    set background=light
-    colorscheme PaperColor
-    " Dark Theme (either one)
-    " set background=dark
-    " colorscheme desert256
-    " colorscheme xoria256
-endif
 
 if (v:version > 700)
     set spelllang=en_us
@@ -130,5 +118,21 @@ map rn <Plug>(coc-rename)
 
 map <C-p> :Files<CR>
 map <C-o> :Ag<CR>
+
+let g:fzf_layout = { 'down': '~20%' }
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
 
 source ~/.vim/freebsd.vim

@@ -117,7 +117,7 @@ map cr <Plug>(coc-references)
 map rn <Plug>(coc-rename)
 
 map <C-p> :Files<CR>
-map <C-o> :Ag<CR>
+map <C-o> :Rg<CR>
 
 let g:fzf_layout = { 'down': '~20%' }
 let g:fzf_colors =

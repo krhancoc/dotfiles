@@ -1,0 +1,3 @@
+fbsetroot|-foreground #32436B -solid #32436B|style|:1.0
+$aspect $full|/home/ryan/.fluxbox/bluebsd.jpg||:0
+fbsetroot|-foreground rgb:4/6/8  -background rgb:3/48/6 -gradient flatcrossdiagonalgradient|style|:0.0

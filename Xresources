@@ -1,0 +1,5 @@
+Xft.dpi: 160
+XTerm.vt100.foreground: white
+XTerm.vt100.background: black
+XTerm.vt100.faceName: Source Code Pro for Powerline
+XTerm.vt100.faceSize: 12
